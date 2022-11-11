@@ -1,0 +1,161 @@
+body{
+    background-color: moccasin;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+}
+
+.header{
+    grid-area: header;
+    background-color: grey;
+    border-radius: 14px;
+    margin-top: 1%;
+    height: 50px;
+    text-align: center;
+}
+
+.header li{
+    list-style-type: none;
+    display: inline-grid;
+    margin-top: 1%;
+    margin-right: 1%;
+    background-color: burlywood;
+    width: 15%;
+    border-radius: 4px;
+}
+
+.header a{
+    color: black;
+    font-size: 150%;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+#subseccion1, #subseccion2, #subseccion3{
+    top: 100%;
+    left: 0px;
+    background-color: brown;
+    font: normal 0.8em arial;
+    padding: 0.2em 0.5em;
+    display: none;
+    width: 90%;
+    border-radius: 7px;
+    z-index: 0;
+    color: brown ;
+}
+
+#contenedor{
+    position: absolute;
+    text-align: center;
+    margin-top: 10%;
+    background-color:gray;
+    width: 50%;
+    height: 50%;
+    right: 25%;
+    border-radius: 10px;
+}
+
+#cajadetexto{
+    text-align: center;
+    margin-top: 18%;
+    font-size: 20px;
+    color: burlywood;
+}
+
+#botonmru{
+    color: burlywood;
+}
+
+#bhoras{
+    font-size: 80px;
+}
+
+.navbar{
+    grid-area: navbar;
+    background-color: grey;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color:lightslategray;
+}
+
+.main{
+    grid-area: main;
+    background-color:slategrey;
+    text-align: center;
+}
+
+.footer{
+    grid-area: footer;
+    background-color:whitesmoke;
+}
+
+.grid-container > *{
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+.grid-container{
+    display: grid;
+    gap: 10px;
+    grid-template:
+      "header"  80px
+      "navbar"  50px
+      "main"    auto
+      "sidebar" 50px   
+      "footer"  50px
+}
+
+@media (min-width: 900px){
+    .grid-container{
+        grid-template:
+         "header header header " 80px
+         "navbar main sidebar "  auto
+         "footer footer footer " 100px /
+         200px  auto  200px;
+
+
+    }
+
+    #nombrephp, #apellidophp, #correophp, #idphp{
+        text-align: center;
+        margin-top: 50px;
+        font-size: 20px;
+    }    
+    
+    #titulophp{
+        font-size: 60px;
+        color: moccasin;
+    }
+    
+    #botonphp{
+        height: 20px;
+        width: 50px;
+        color: burlywood;
+    }
+
+    #tabla3{
+        margin-left: 50%;
+        margin-top: 13%;
+        text-align: center;
+    }
+
+  
+
+
+    
+
+ 
+}
